@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "1f6e0517-5d1c-44c0-863a-34496181728e",
+		"name": "Avengers Criminal Records",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35068792"
+	},
+	"item": [
+		{
+			"name": "Get Criminal Records",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/records",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"records"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Criminal Record By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/records/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"records",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add New Criminal Record",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"hero_name\": \"Wanda Maximoff\",\n    \"villain_name\": \"Thanos\",\n    \"description\": \"Scarlet Witch used her reality-warping abilities to prevent Thanos from retrieving the Mind Stone.\",\n    \"event_time\": \"2024-04-15\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/records",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"records"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Criminal Record",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"hero_name\": \"Wanda Maximoff\",\n    \"villain_name\": \"Thanos\",\n    \"description\": \"Scarlet Witch used her reality-warping abilities to prevent Thanos from retrieving the Mind Stone from Vision.\",\n    \"event_time\": \"2024-04-15\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/records/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"records",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Criminal Record",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/records/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"records",
+						"11"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
